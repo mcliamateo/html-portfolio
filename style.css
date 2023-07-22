@@ -1,11 +1,53 @@
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #4f7ab3, #2a3f6d);
+  /* Replace the URLs below with your desired background image URLs */
+  background-image: url("https://media.istockphoto.com/id/1367578805/vector/black-background-dotted-dark-texture-elegant-wallpaper-with-soft-shadow-carbon-cover-design.jpg?s=612x612&w=0&k=20&c=4JQLvcgQTKkhyzmjuOuuAKxt7-zDZBc-jFPHn3clRqA=");
+  background-size: cover;
+  background-position: center;
+}
+
+hr{
+  margin-inline: 5%;
+  margin-top: 50px;
+  box-shadow: gray;
+}
+
+h1,h2{
+  color:beige;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+h2{
+  font-weight: 300;
+  font-style:initial;
+}
+
+.light-link {
+  color: #4f7ab3; /* White color for the link */
+  text-decoration: none; /* Remove default underline */
+  text-decoration:underline;
+}
+
 .divclass{
     display: grid;
     grid-template-columns: 5fr 6fr;
     gap: 10px;
 }
+
 .right-image {
     display: flex; 
     justify-content: flex-end;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Optional: set the container height to center vertically too */
 }
 
 .middle-container {
@@ -13,10 +55,19 @@
     justify-content: center;
     align-items: center;
     height: 20vh; /* Adjust the height as needed */
-  }
+}
+.index-details{
+  justify-content: center;
+  align-items: center;
+}
+
+.aspace{
+    margin-right: 20px;
+    padding: 0 10px;
+}
 
 .index-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 10px;
-  }
+}
