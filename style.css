@@ -1,13 +1,13 @@
 
 body {
+  background-size: cover; /* This makes the image cover the entire container */
+  background-position: center; 
+  width: 100%;
+  height: 500px;
   margin: 0;
-  padding: 40px;
+  padding: 0px;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #4f7ab3, #2a3f6d);
-  /* Replace the URLs below with your desired background image URLs */
-  background-image: url("https://media.istockphoto.com/id/1367578805/vector/black-background-dotted-dark-texture-elegant-wallpaper-with-soft-shadow-carbon-cover-design.jpg?s=612x612&w=0&k=20&c=4JQLvcgQTKkhyzmjuOuuAKxt7-zDZBc-jFPHn3clRqA=");
-  background-size: cover;
-  background-position: center;
+  /*background: linear-gradient(to bottom, #4f7ab3, #2a3f6d);*/
 }
 
 hr{
@@ -50,11 +50,49 @@ h2{
   height: 100vh; /* Optional: set the container height to center vertically too */
 }
 
+.profile-pic {
+  /* Define the size of the profile picture container */
+  width: 150px;
+  height: 200px;
+  /* Create a circular shape using border-radius */
+  border-radius: 50%;
+  /* Add a subtle shadow effect */
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  /* You can also center the image within the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional: Add a border to the profile picture */
+  border: 2px solid #fff;
+  /* Optional: Adjust the background color of the container */
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px 5px rgba(255, 165, 0, 0.7);
+}
+
+/* Style the image within the profile picture container */
+.profile-pic img {
+  /* Make sure the image covers the entire container */
+  width: 100%;
+  height: 100%;
+  /* Create a circular shape using border-radius (same as the container) */
+  border-radius: 50%;
+  /* Ensure the image doesn't exceed the container's bounds */
+  object-fit: cover;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; /* Adjust the height as needed */
+  background-color: black;
+}
+
 .middle-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Adjust the height as needed */
 }
 .index-details{
   justify-content: center;
@@ -62,12 +100,24 @@ h2{
 }
 
 .aspace{
-    margin-right: 20px;
-    padding: 0 10px;
+  margin-right: 20px;
+  padding: 0 10px;
+  color: #f0f0f0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.aspace:hover{
+  color: white;
+  
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
 .index-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 10px;
+  margin-left:10%;
+  margin-right: 10%;
+  margin-top: 30px;
 }
