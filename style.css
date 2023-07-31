@@ -1,46 +1,38 @@
-
 body {
-  background-size: cover; /* This makes the image cover the entire container */
-  background-position: center; 
-  width: 100%;
-  height: 500px;
   margin: 0;
   padding: 0px;
   font-family: Arial, sans-serif;
+  color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: black;
+  height: 100vh;
+  display: grid;
+
   /*background: linear-gradient(to bottom, #4f7ab3, #2a3f6d);*/
 }
 
-hr{
-  margin-inline: 5%;
-  margin-top: 50px;
-  box-shadow: gray;
+.header-div{
+  align-items: flex-start;
+  justify-content: start;
 }
 
-h1,h2{
-  color:beige;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+.header-text{
+  font-family: 'Press Start 2P', cursive;
+  color: yellow;
+  font-size: 50px;
+  text-shadow: 0 0 20px rgba(255, 0, 255, 1);
+  text-align: center;
 }
 
-h2{
-  font-weight: 300;
-  font-style:initial;
-}
-
-.light-link {
-  color: #4f7ab3; /* White color for the link */
-  text-decoration: none; /* Remove default underline */
-  text-decoration:underline;
-}
-
-.divclass{
-    display: grid;
-    grid-template-columns: 5fr 6fr;
-    gap: 10px;
-}
-
-.right-image {
-    display: flex; 
-    justify-content: flex-end;
+.header-description{
+  color: white;
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 0 0 20px rgba(255, 0, 255, 1);
+  text-align: center;
 }
 
 .container {
@@ -51,73 +43,59 @@ h2{
 }
 
 .profile-pic {
-  /* Define the size of the profile picture container */
-  width: 150px;
-  height: 200px;
-  /* Create a circular shape using border-radius */
+  width: 400px;
+  height: 500px;
   border-radius: 50%;
-  /* Add a subtle shadow effect */
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  /* You can also center the image within the container */
-  display: flex;
-  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  justify-content: flex-end;
   align-items: center;
-  /* Optional: Add a border to the profile picture */
-  border: 2px solid #fff;
-  /* Optional: Adjust the background color of the container */
   background-color: #f0f0f0;
-  box-shadow: 0 0 10px 5px rgba(255, 165, 0, 0.7);
+  box-shadow: 0px 0px 30px 5px rgba(255, 0, 255, 0.7);
 }
 
 /* Style the image within the profile picture container */
 .profile-pic img {
-  /* Make sure the image covers the entire container */
   width: 100%;
   height: 100%;
-  /* Create a circular shape using border-radius (same as the container) */
   border-radius: 50%;
-  /* Ensure the image doesn't exceed the container's bounds */
   object-fit: cover;
 }
 
 .top-container {
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
-  height: 15vh; /* Adjust the height as needed */
+  height: 15vh; 
   background-color: black;
+  font-size: 20px;
 }
 
-.middle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20vh; /* Adjust the height as needed */
-}
-.index-details{
-  justify-content: center;
-  align-items: center;
-}
 
 .aspace{
   margin-right: 20px;
   padding: 0 10px;
-  color: #f0f0f0;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 .aspace:hover{
-  color: white;
-  
-  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  color: rgba(255, 0, 255, 1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
 .index-container {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  background-color: rgba(0, 0, 0, 0.3);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: inherit;
   gap: 10px;
-  margin-left:10%;
-  margin-right: 10%;
-  margin-top: 30px;
+  width: auto;
+  height: 300px;
+  margin-left:5%;
+  margin-right: 5%;
 }
