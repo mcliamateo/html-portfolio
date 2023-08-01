@@ -156,6 +156,7 @@ body {
   overflow: hidden;
   border-right: 1px solid; /* Simulates the appearance of typing */
   animation: typing 6s steps(28) infinite; /* Adjust duration and steps as needed */
+  animation-delay: 2s;
 }
 
 
