@@ -171,7 +171,7 @@ body {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
-.music{
+.spotify-icon{
   display: flex;
   justify-content: right;
   align-items: center;
