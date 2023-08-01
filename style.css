@@ -16,14 +16,14 @@ body {
 
 /* INDEX DESIGN */
 .index-container {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.3);
   display:flex;
   justify-content: center;
   align-items: center;
   grid-row: inherit;
   gap: 10%;
   width: auto;
-  height: 500px;
+  height: 400px;
   margin-left:5%;
   margin-right: 5%;
   border-radius: 50px;
@@ -171,3 +171,15 @@ body {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
 }
 
+.music{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 0vh;
+}
+
+/* Style the iframe */
+iframe {
+  width: 300px; /* Set the width of the iframe */
+  height: 250px; /* Set the height of the iframe */
+}
