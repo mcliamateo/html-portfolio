@@ -14,6 +14,55 @@ body {
   /*background: linear-gradient(to bottom, #4f7ab3, #2a3f6d);*/
 }
 
+/* INDEX DESIGN */
+.index-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: inherit;
+  gap: 10%;
+  width: auto;
+  height: 500px;
+  margin-left:5%;
+  margin-right: 5%;
+  border-radius: 50px;
+}
+
+.profile-fire {
+  display: absolute;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.gif-image, .overlay-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* Add other styles as needed for the images */
+}
+
+.overlay-image {
+  position: absolute;
+  top: 7.5%;
+  left: 7.5%;
+}
+
+/* Add animation or effects to the GIF */
+.gif-image {
+  width: 355px;
+  height: 355px;
+  animation: spin 15s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 .header-div{
   align-items: flex-start;
   justify-content: start;
@@ -65,7 +114,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   border-right: 1px solid; /* Simulates the appearance of typing */
-  animation: typing 8s steps(28) infinite; /* Adjust duration and steps as needed */
+  animation: typing 6s steps(28) infinite; /* Adjust duration and steps as needed */
 }
 
 
@@ -120,51 +169,5 @@ body {
 .aspace:hover{
   color: rgba(255, 0, 255, 1);
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
-}
-
-.index-container {
-  background-color: rgba(0, 0, 0, 0.3);
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  grid-row: inherit;
-  gap: 10px;
-  width: auto;
-  height: 300px;
-  margin-left:5%;
-  margin-right: 5%;
-}
-
-.profile-fire {
-  display: absolute;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.gif-image, .overlay-image {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  object-fit: cover;
-  /* Add other styles as needed for the images */
-}
-
-.overlay-image {
-  position: absolute;
-  top: 7.5%;
-  left: 7.5%;
-}
-
-/* Add animation or effects to the GIF */
-.gif-image {
-  width: 355px;
-  height: 355px;
-  animation: spin 15s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
