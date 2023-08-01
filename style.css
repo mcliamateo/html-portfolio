@@ -175,7 +175,7 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 0vh;
+  height: 10vh;
 }
 
 /* Style the iframe */
