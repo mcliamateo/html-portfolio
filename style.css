@@ -61,7 +61,7 @@ body {
   justify-content: center;
   align-items: center;
   grid-row: inherit;
-  gap: 10%;
+  gap: 0%;
   width: auto;
   height: 400px;
   margin-left:5%;
@@ -225,6 +225,6 @@ iframe {
 }
 
 .spotify-icon{
-  width: 150px;
+  width: 100px;
   height: auto;
 }
