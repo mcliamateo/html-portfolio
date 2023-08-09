@@ -230,3 +230,80 @@ iframe {
   width: 150px;
   height: auto;
 }
+
+/* Styles for the navbar */
+.navbar {
+  background-color: transparent; /* Initial background color (transparent or any color you prefer) */
+  transition: background-color 0.3s; /* Smooth transition when the background color changes */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh; 
+  background-color: black;
+  font-size: 20px;
+  position: sticky;
+  top: 0;
+}
+
+/* Class for the effect */
+.navbar.scrolled {
+  background-color: black; /* Background color when scrolled down */
+}
+
+.img-icon{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  height: 10vh;
+}
+
+
+/* SOCIAL MEDIA LISTS */
+ul.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+ul.nav-list li {
+  margin-right: 20px;
+}
+
+ul.nav-list li:last-child {
+  margin-right: 0;
+}
+
+ul.nav-list li a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px;
+}
+
+ul.nav-list li a:hover {
+  background-color: #ddd;
+}
+
+ul.address{
+  list-style: none; 
+}
+
+.contact{
+  background-color: #333;
+}
+
+.div-content{
+  justify-content: center;
+}
+
+/* Image inside a Text */
+.text-with-image {
+  font-size: 60px;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text; /* For Webkit browsers like Chrome and Safari */
+  background-clip: text; /* Standard property */
+  color: transparent; /* Hide the actual text */
+}
+
