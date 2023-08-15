@@ -7,3 +7,11 @@ window.addEventListener('scroll', function() {
 document.getElementById('box').addEventListener('click', function(){
      alert('I got clicked');
   })
+
+
+
+const rotatingImage = document.querySelector('.rotating-image');
+window.addEventListener('scroll', () => {
+  const rotation = window.scrollY;
+  rotatingImage.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+});

@@ -307,3 +307,45 @@ ul.address{
   color: transparent; /* Hide the actual text */
 }
 
+
+/* Continouos rotating */
+.rotate-on-scroll {
+  /* width: 200px;
+  height: 200px; */
+  /* background-color: #3498db; */
+  /* position:sticky; */
+  /* top: 50%;
+  left: 50%; */
+  animation: rotate 30s linear infinite; /* Apply the animation */
+  background-image: url('../assets/images/yinyang.png');
+  background-size: cover;
+  background-position: center; 
+  transition: transform 0.5s ease; 
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(100%, 1000%) rotate(0deg);
+  }
+  100% {
+    transform: translate(100%, 100%) rotate(360deg);
+  }
+}
+
+
+/* scroll rotate */
+.rotating-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 200px;
+  height: 200px; */
+  /* background-color: #3498db; */
+  /* position: fixed; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform-origin: center; */
+  /* transform: translate(-50%, -50%); */
+}
+
+
